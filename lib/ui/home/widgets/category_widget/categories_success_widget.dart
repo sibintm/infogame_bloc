@@ -29,6 +29,7 @@ class CategoriesSuccessWidget extends StatelessWidget {
                           categoryName: categorySelected.name ?? '',
                         ),
                       );
+
                   context.read<CategoryBloc>().add(
                         SelectCategory(
                           idSelected: categorySelected.id,

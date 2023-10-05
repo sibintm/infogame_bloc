@@ -22,6 +22,7 @@ class GamesByCategoryBloc
 
       final gamesByCategory =
           await gameRepository.getGamesByCategory(event.idSelected);
+      print(gamesByCategory);
       emit(
         state.copyWith(
           status: GamesByCategoryStatus.success,
